@@ -1,0 +1,26 @@
+@import "./../../style/variables";
+.main-header {
+  height: 72px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.main-header-right {
+  justify-content: end;
+  align-items: center;
+}
+
+.search-input {
+  width: 300px;
+  height: 32px;
+  border-radius: 8px;
+  color: $dark-3-dark;
+  background: $dark-5-dark;
+  border-style: none;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

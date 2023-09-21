@@ -1,0 +1,17 @@
+@import "./../../style//variables";
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  span {
+    color: $dark-0-dark;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 6px;
+  }
+}

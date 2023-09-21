@@ -1,0 +1,146 @@
+@import "./variables";
+
+/* Semibold */
+.semibold {
+  font-weight: 600;
+}
+// Medium
+.medium {
+  font-weight: 500;
+}
+// Regular
+.regular {
+  font-weight: 400;
+}
+
+/* Headline/H1 */
+h1 {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 46px; /* 127.778% */
+}
+
+/* Headline/H2 */
+h2 {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+}
+
+/* Headline/H3 */
+h3 {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px; /* 133.333% */
+}
+
+/* Headline/H4 */
+h4 {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.h4 {
+  @extend h4;
+}
+
+/* Headline/H5 */
+h5 {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+
+/* Headline/H6 */
+h6 {
+  color: $dark-3-dark;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+}
+
+// Number formatting
+
+/* Number/Big number */
+.big-number {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Number/Medium number */
+.medium-number {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Number/Small number */
+.small-number {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Paragraph */
+
+/* Paragraph/1-Paragraph */
+p {
+  color: $dark-2-dark;
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.paragraph2 {
+  @extend p;
+  color: $dark-3-dark;
+}
+
+/* Paragraph/3-Paragraph */
+.paragraph3 {
+  color: $dark-1-dark;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}

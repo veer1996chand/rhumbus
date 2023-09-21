@@ -1,0 +1,109 @@
+// external properties
+.border-properties {
+  border-style: solid;
+}
+.border-bottom {
+  @extend .border-properties;
+  border-bottom-width: 1px;
+}
+
+.border-right {
+  @extend .border-properties;
+  border-right-width: 1px;
+}
+
+/* Layout */
+/* -------------------------------- Row -------------------------------- */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* -------------------------------- Col -------------------------------- */
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------------------- Padding -------------------------------- */
+
+// 14
+.pl-14 {
+  padding-left: 14px;
+}
+
+.pr-14 {
+  padding-right: 14px;
+}
+
+// 23
+
+.pt-23 {
+  padding-top: 23px;
+}
+
+// 32
+.pl-32 {
+  padding-left: 32px;
+}
+
+.pr-32 {
+  padding-right: 32px;
+}
+
+// 36
+.pt-36 {
+  padding-top: 36px;
+}
+
+/* -------------------------------- Margin -------------------------------- */
+// 8
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+// 12
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+// 14
+.ml-14 {
+  margin-left: 14px;
+}
+
+.mr-14 {
+  margin-right: 14px;
+}
+
+// 24
+.ml-24 {
+  margin-left: 24px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+// 32
+.ml-32 {
+  margin-left: 32px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+/* -------------------------------- Justify -------------------------------- */
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
