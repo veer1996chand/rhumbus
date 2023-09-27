@@ -39,3 +39,12 @@ body {
   @extend .icon-properties;
   font-size: 22px !important;
 }
+
+// Common styles
+.border {
+  border-radius: 8px !important;
+  border: 1px solid var(--form-borders-normal-1, $line-1-line);
+}
+
+// Existing Antd Component Common Styles
+// Card

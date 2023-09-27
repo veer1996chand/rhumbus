@@ -20,6 +20,7 @@ h1 {
   font-family: Inter;
   font-size: 36px;
   font-style: normal;
+  font-weight: 600;
   line-height: 46px; /* 127.778% */
 }
 
@@ -31,6 +32,7 @@ h2 {
   font-size: 24px;
   font-style: normal;
   line-height: normal;
+  font-weight: 600; // medium default
 }
 
 /* Headline/H3 */
@@ -44,7 +46,7 @@ h3 {
 }
 
 /* Headline/H4 */
-h4 {
+.h4 {
   color: $dark-1-dark;
   font-feature-settings: "clig" off, "liga" off;
 
@@ -54,8 +56,8 @@ h4 {
   line-height: normal;
 }
 
-.h4 {
-  @extend h4;
+h4 {
+  @extend .h4;
 }
 
 /* Headline/H5 */
@@ -69,13 +71,17 @@ h5 {
 }
 
 /* Headline/H6 */
-h6 {
+.h6 {
   color: $dark-3-dark;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
   line-height: normal;
+}
+
+h6 {
+  @extend .h6;
 }
 
 // Number formatting
@@ -128,7 +134,7 @@ p {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
 }
-
+// dark text
 .paragraph2 {
   @extend p;
   color: $dark-3-dark;
@@ -143,4 +149,9 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+// text alignment
+.text-align-right {
+  text-align: right;
 }

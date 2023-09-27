@@ -1,0 +1,32 @@
+@import "../../style/variables";
+
+.widget-layout {
+  padding: 32px !important;
+}
+
+// inner card which we used in other card
+.nested-card {
+  padding: 24px !important;
+  background-color: $dark-6-white;
+}
+
+.widget-header {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+
+.widget-top-left > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.widget-top-left:last-child {
+  padding-right: 0px !important;
+}
+
+.widget-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

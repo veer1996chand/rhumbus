@@ -1,0 +1,5 @@
+@import "../../style/variables";
+.ant-card {
+  border-radius: 8px !important;
+  border: 1px solid var(--form-borders-normal-1, $line-1-line);
+}

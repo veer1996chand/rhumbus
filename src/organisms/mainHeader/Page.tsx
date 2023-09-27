@@ -28,10 +28,10 @@ export default function MainHeader() {
           Add
         </Button>
         <div className="ml-8 mr-8">
-          <QuestionCircleFilled />
+          <QuestionCircleFilled className="large-icon" />
         </div>
         <div className="ml-8 mr-12">
-          <BellFilled />
+          <BellFilled className="large-icon" />
         </div>
         <div className="ml-12 mr-24">
           <Profile />

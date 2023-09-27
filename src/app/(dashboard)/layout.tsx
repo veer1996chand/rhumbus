@@ -28,7 +28,7 @@ export default function DashboardLayout({
       </Sider>
       <Layout>
         <MainHeader />
-        <Content>{children}</Content>
+        <Content className="dashboard-content">{children}</Content>
       </Layout>
     </Layout>
   );
