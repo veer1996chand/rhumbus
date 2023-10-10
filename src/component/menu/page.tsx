@@ -24,11 +24,13 @@ export default function Menu({
   openKeys,
   onOpenChange,
   items,
+  onClick,
 }: {
   mode: "vertical" | "horizontal" | "inline";
   openKeys: string[];
   onOpenChange: (openKeys: string[]) => void;
-  items: MenuItem[];
+  items?: MenuItem[];
+  onClick: MenuProps["onClick"];
 }) {
   return (
     <AntdMenu
@@ -36,6 +38,7 @@ export default function Menu({
       openKeys={openKeys}
       onOpenChange={onOpenChange}
       items={items}
+      onClick={onClick}
     />
   );
 }

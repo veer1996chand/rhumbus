@@ -1,0 +1,21 @@
+@import "../../style/variables";
+.ant-breadcrumb {
+  ol {
+    display: flex;
+    align-items: center;
+    a {
+      background-color: transparent !important;
+    }
+  }
+  &-separator,
+  &-link {
+    color: $primary-color !important;
+    font-feature-settings: "clig" off, "liga" off;
+    /* Headline/H5 Medium */
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

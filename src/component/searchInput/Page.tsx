@@ -1,11 +1,17 @@
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 
-export default function SearchInput({ className }: { className: string }) {
+export default function SearchInput({
+  className,
+  placeholder = "Search...",
+}: {
+  className?: string;
+  placeholder?: string;
+}) {
   return (
     <Input
-      placeholder="Search..."
-      className={className}
+      placeholder={placeholder}
+      className={`search-input ${className}`}
       prefix={<SearchOutlined className="site-form-item-icon" />}
     />
   );

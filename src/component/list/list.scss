@@ -1,0 +1,12 @@
+@import "../../style/variables";
+.antd-btn .ant-btn,
+.ant-btn-link {
+  color: $primary-color !important;
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}

@@ -20,7 +20,7 @@ export default function MainHeader() {
       justify={"space-between"}
     >
       <Col span={12}>
-        <SearchInput className="search-input" />
+        <SearchInput className="header-search-input" />
       </Col>
       <Col span={12} className="row main-header-right ">
         <Button onClick={() => {}} className="add-button mr-14">

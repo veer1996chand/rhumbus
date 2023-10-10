@@ -29,7 +29,21 @@ body {
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
 }
+//  Elements
+.search-input {
+  border-radius: 8px;
+  border: 1px solid var(--form-borders-normal-1, $line-1-line);
+  color: $dark-3-dark;
+  background: $dark-5-dark;
+}
 
+/* --------------------------------  Mouse cursor Properties-------------------------------- */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* --------------------------------  Icon Properties-------------------------------- */
 .icon-properties {
   color: $shape-icon !important;
 }
@@ -40,6 +54,12 @@ body {
   font-size: 22px !important;
 }
 
+// x large icon
+.x-large-icon {
+  @extend .icon-properties;
+  font-size: 24px !important;
+}
+
 // Common styles
 .border {
   border-radius: 8px !important;
@@ -47,4 +67,3 @@ body {
 }
 
 // Existing Antd Component Common Styles
-// Card

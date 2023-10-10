@@ -1,0 +1,41 @@
+@import "../../../style/variables";
+.list-data-widget {
+  height: 100%;
+  .ant-list {
+    height: 100%;
+    background-color: $dark-6-white;
+  }
+  .ant-list-bordered {
+    border-radius: 12px;
+    border-color: $white;
+    /* Shadow/1-Shadow */
+    box-shadow: 0px 1px 3px 0px rgba(223, 2, 2, 0.08);
+  }
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .item-content {
+    width: 100%;
+  }
+
+  .item-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.list-action {
+  .ant-list {
+    &-bordered &-lg,
+    &-header,
+    &-item {
+      padding: 24px !important;
+    }
+  }
+}

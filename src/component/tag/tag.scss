@@ -1,0 +1,19 @@
+@import "../../style/variables";
+.antd-tag {
+  color: $primary-color !important;
+
+  /* Headline/H6 Medium */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  border-radius: 4px;
+  border-style: none;
+  // opacity: 0.12;
+  background: $primary-color-light;
+  &.ant-tag {
+    padding: 5px 8px 5px 8px !important;
+  }
+}

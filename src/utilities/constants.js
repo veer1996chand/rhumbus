@@ -19,3 +19,5 @@ export const dayOptions = [
     label: "Group by date",
   },
 ];
+
+export const dateFormat = "DD MMMM YYYY";

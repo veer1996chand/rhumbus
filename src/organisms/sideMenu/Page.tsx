@@ -9,28 +9,27 @@ import {
   GiftFilled,
 } from "@ant-design/icons";
 
-import Sider from "antd/es/layout/Sider";
 import Logo from "@/molecules/logo/page";
 import Menu, { getMenuItem } from "@/component/menu/page";
 
 import IconMenu from "../../assets/icon/ic_menu.svg";
-import IcDashboard from "../../assets/icon/ic_dashboard.svg";
 
 import "./sideBar.scss";
+import { useRouter } from "next/navigation";
 
 type MenuItem = Required<MenuProps>["items"][number];
 // submenu keys of first level
 const rootSubmenuKeys = ["sub2", "sub4"];
 
 const items: MenuItem[] = [
-  getMenuItem("Overview", "sub1", <AppstoreFilled className="large-icon" />),
+  getMenuItem(
+    "Overview",
+    "overview",
+    <AppstoreFilled className="large-icon" />
+  ),
   getMenuItem("Business", "sub2", <HomeFilled className="large-icon" />, [
     getMenuItem("Business Snapshot", "5"),
-    getMenuItem("Cast Flow", "6"),
-    // getMenuItem("Submenu", "sub3", null, [
-    //   getMenuItem("Option 7", "7"),
-    //   getMenuItem("Option 8", "8"),
-    // ]),
+    getMenuItem("Cast Flow", "cashflow"),
   ]),
   getMenuItem("Sales", "sub4", <PoundCircleFilled className="large-icon" />, [
     getMenuItem("Sales 9", "9"),
@@ -39,12 +38,13 @@ const items: MenuItem[] = [
     getMenuItem("Transactions 10", "10"),
   ]),
   getMenuItem("Expenses", "sub6", <GiftFilled className="large-icon" />),
-  getMenuItem("Reports", "sub7", <GiftFilled className="large-icon" />),
+  getMenuItem("Reports", "reports", <GiftFilled className="large-icon" />),
   getMenuItem("Projects", "sub8", <GiftFilled className="large-icon" />),
-  getMenuItem("Contacts", "sub8", <GiftFilled className="large-icon" />),
+  getMenuItem("Contacts", "sub9", <GiftFilled className="large-icon" />),
 ];
 
 export default function SideMenu() {
+  const router = useRouter();
   const [openKeys, setOpenKeys] = useState(["sub1"]);
 
   const onOpenChange: MenuProps["onOpenChange"] = (keys) => {
@@ -54,6 +54,10 @@ export default function SideMenu() {
     } else {
       setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
     }
+  };
+
+  const navigateToPage = ({ key }: { key: String }) => {
+    router.push(`/${key}`);
   };
 
   return (
@@ -68,6 +72,7 @@ export default function SideMenu() {
           openKeys={openKeys}
           onOpenChange={onOpenChange}
           items={items}
+          onClick={navigateToPage}
         />
       </div>
     </div>
