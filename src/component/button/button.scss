@@ -10,3 +10,9 @@
   line-height: normal;
   text-decoration-line: underline;
 }
+
+.ant-btn-primary {
+  @extend .antd-btn, .ant-btn;
+  background-color: $primary-color !important;
+  color: $white !important;
+}

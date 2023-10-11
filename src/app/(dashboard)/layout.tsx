@@ -5,7 +5,7 @@ import MainHeader from "@/organisms/mainHeader/Page";
 import SideMenu from "@/organisms/sideMenu/Page";
 
 import "./layout.scss";
-const { Header, Footer, Sider, Content } = Layout;
+const { Sider, Content } = Layout;
 
 export default function DashboardLayout({
   children, // will be a page or nested layout

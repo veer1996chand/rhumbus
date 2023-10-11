@@ -9,20 +9,25 @@ export default function Select({
   options,
   defaultValue,
   bordered,
+  suffixIcon,
+  onChange,
   ...rest
 }: {
   showSearch?: boolean;
-  className?: String;
+  className?: string;
   placeholder: string;
   style?: object;
   options: Array<T>;
   bordered?: boolean;
   defaultValue?: string | number | boolean;
+  suffixIcon?: React.ReactNode;
+  onChange?: (value: string[]) => void;
   rest?: Object;
 }) {
   return (
     <AntdSelect
       showSearch={showSearch || false}
+      className={className}
       style={style}
       placeholder={placeholder}
       optionFilterProp="children"
@@ -35,6 +40,8 @@ export default function Select({
       options={options}
       bordered={bordered}
       defaultValue={defaultValue}
+      suffixIcon={suffixIcon}
+      onChange={onChange}
       {...rest}
     />
   );
