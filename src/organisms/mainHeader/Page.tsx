@@ -1,5 +1,5 @@
 "use client";
-import { Layout, Button, theme, Col, Row, Avatar } from "antd";
+import { Layout, Button, theme, Col, Row, Avatar, Badge } from "antd";
 import {
   PlusOutlined,
   QuestionCircleFilled,
@@ -31,7 +31,9 @@ export default function MainHeader() {
           <QuestionCircleFilled className="large-icon" />
         </div>
         <div className="ml-8 mr-12">
-          <BellFilled className="large-icon" />
+          <Badge dot={true} size="default" offset={[-5, 3]}>
+            <BellFilled className="large-icon" />
+          </Badge>
         </div>
         <div className="ml-12 mr-24">
           <Profile />

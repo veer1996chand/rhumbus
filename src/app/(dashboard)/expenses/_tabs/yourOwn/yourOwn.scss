@@ -1,0 +1,17 @@
+@import "../../../../../style/variables";
+
+.your-own-sub-header {
+  height: 118px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: $dark-6-white;
+
+  /* Shadow/1-Shadow */
+  box-shadow: $box-shadow-1;
+}
+
+// temporarily for size
+.ant-badge.ant-badge-status .ant-badge-status-dot {
+  width: 4px;
+  height: 4px;
+}

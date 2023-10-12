@@ -1,1 +1,15 @@
 @import "../../style/variables";
+
+.ant-tabs {
+  .ant-tabs-tab:hover {
+    color: $primary-color;
+  }
+  .ant-tabs-tab-active {
+    border-bottom: 2px solid $primary-color !important;
+    z-index: 2;
+
+    .ant-tabs-tab-btn {
+      color: $dark-1-dark !important;
+    }
+  }
+}

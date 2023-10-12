@@ -59,10 +59,8 @@ export default function CashFlow() {
                 </div>
                 <div className="item-footer">
                   <h5 className="semibold">{value}</h5>
-                  <Button type="link">
-                    <h5 className="underline medium primary-color underline-default ">
-                      {buttonName}
-                    </h5>
+                  <Button type="link" className="medium">
+                    {buttonName}
                   </Button>
                 </div>
               </List.Item>

@@ -1,11 +1,15 @@
-import { Card as AntdCard } from "antd";
+import { Card as AntdCard, CardProps } from "antd";
 import "./card.scss";
 export default function Card({
   children,
   className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return <AntdCard className={className}>{children}</AntdCard>;
+  title,
+  bordered,
+  ...rest
+}: CardProps) {
+  return (
+    <AntdCard className={className} title={title} bordered={bordered} {...rest}>
+      {children}
+    </AntdCard>
+  );
 }

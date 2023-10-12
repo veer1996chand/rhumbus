@@ -21,3 +21,8 @@ export const dayOptions = [
 ];
 
 export const dateFormat = "DD MMMM YYYY";
+
+export const IconsColor = {
+  primaryColor: "#775da6",
+  dark6Dark: "#898989",
+};

@@ -1,18 +1,39 @@
 @import "../../style/variables";
-.antd-btn .ant-btn,
-.ant-btn-link {
-  color: $primary-color !important;
+
+.antd-btn,
+.ant-btn {
+  color: $dark-1-dark !important;
   text-align: right;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-decoration-line: underline;
+  text-decoration-line: none;
+}
+
+.ant-btn-link {
+  @extend .antd-btn, .ant-btn;
+}
+
+.ant-btn-default:hover {
+  border-color: $primary-color !important;
+  color: $primary-color !important;
 }
 
 .ant-btn-primary {
   @extend .antd-btn, .ant-btn;
   background-color: $primary-color !important;
   color: $white !important;
+  height: 40px;
+}
+
+.filter-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 8px 12px !important;
+  width: 94px;
+  height: 40px;
 }

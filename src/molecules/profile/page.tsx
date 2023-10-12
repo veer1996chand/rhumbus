@@ -1,14 +1,12 @@
-import { Avatar, Col, Row } from "antd";
+import { Col, Row } from "antd";
 import ProfileImg from "../../assets/img/profile.svg";
 import Image from "next/image";
 import "./profile.scss";
 export default function Profile() {
   return (
     <Row className="align-items-center">
-      <Col>
-        <Avatar size="large" className="profile-avatar">
-          <Image src={ProfileImg} alt="user-profile" />
-        </Avatar>
+      <Col className="mr-8">
+        <Image src={ProfileImg} alt="user-profile" width={32} height={32} />
       </Col>
       <Col>
         <div>

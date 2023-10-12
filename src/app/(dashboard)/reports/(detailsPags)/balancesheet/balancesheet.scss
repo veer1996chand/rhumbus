@@ -1,56 +1,42 @@
 @import "../../../../../style/variables";
-.back-arrow {
-  margin-left: -10px !important;
-}
-
-.filter-button {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between;
-  border-radius: 8px;
-  padding: 8px 12px !important;
-  width: 94px;
-  height: 40px;
-}
-
-.update-button {
-  border-radius: 8px;
-  width: 82px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-.balancesheet-header {
-  display: flex !important;
-  flex-direction: row;
-  width: 100%;
-}
-
-.comparison-select {
-  .ant-select-selection-item::before {
-    content: "Comparison :";
-    color: $dark-6-dark;
-    font-feature-settings: "clig" off, "liga" off;
-    /* Regular/Secondary */
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.balancesheet-tab {
+  .back-arrow {
+    margin-left: -10px !important;
   }
-}
 
-.balance-sheet-card {
-  background-color: $dark-6-white;
-}
-
-.sub-header {
-  .ant-card-body {
-    display: flex;
+  .balancesheet-header {
+    display: flex !important;
     flex-direction: row;
-    border-radius: 8px;
-    border: 1px solid $line-1-line;
-    background: $dark-6-white;
-    align-items: center;
+    width: 100%;
+  }
+
+  .comparison-select {
+    .ant-select-selection-item::before {
+      content: "Comparison :";
+      color: $dark-6-dark;
+      font-feature-settings: "clig" off, "liga" off;
+      /* Regular/Secondary */
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .balance-sheet-card {
+    background-color: $dark-6-white;
+  }
+
+  .sub-header {
+    .ant-card-body {
+      display: flex;
+      flex-direction: row;
+      border-radius: 8px;
+      border: 1px solid $line-1-line;
+      background: $dark-6-white;
+      align-items: center;
+      height: 56px;
+    }
   }
 }

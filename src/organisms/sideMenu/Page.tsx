@@ -28,19 +28,19 @@ const items: MenuItem[] = [
     <AppstoreFilled className="large-icon" />
   ),
   getMenuItem("Business", "sub2", <HomeFilled className="large-icon" />, [
-    getMenuItem("Business Snapshot", "5"),
+    getMenuItem("Business Snapshot", "cashflow"),
     getMenuItem("Cast Flow", "cashflow"),
   ]),
   getMenuItem("Sales", "sub4", <PoundCircleFilled className="large-icon" />, [
-    getMenuItem("Sales 9", "9"),
+    getMenuItem("Sales ", "sales"),
   ]),
   getMenuItem("Transactions", "sub5", <GiftFilled className="large-icon" />, [
-    getMenuItem("Transactions 10", "10"),
+    getMenuItem("Transactions", "transaction"),
   ]),
-  getMenuItem("Expenses", "sub6", <GiftFilled className="large-icon" />),
+  getMenuItem("Expenses", "expenses", <GiftFilled className="large-icon" />),
   getMenuItem("Reports", "reports", <GiftFilled className="large-icon" />),
-  getMenuItem("Projects", "sub8", <GiftFilled className="large-icon" />),
-  getMenuItem("Contacts", "sub9", <GiftFilled className="large-icon" />),
+  getMenuItem("Projects", "projects", <GiftFilled className="large-icon" />),
+  getMenuItem("Contacts", "contacts", <GiftFilled className="large-icon" />),
 ];
 
 export default function SideMenu() {
