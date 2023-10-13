@@ -25,6 +25,24 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
   /- Reports
     /- Balance Sheet 
 
+### Home Page
+![Screenshot from 2023-10-13 13-32-28](https://github.com/chandraveer-simform/rhumbus/assets/65344767/0cb9bd84-fc22-4109-b53a-be94f3ad3b8a)
+
+### Cash Flow
+![Screenshot from 2023-10-13 13-34-55](https://github.com/chandraveer-simform/rhumbus/assets/65344767/5253c4c2-b2ca-47c0-a258-4bb5634523b6)
+
+### Expenses
+![Screenshot from 2023-10-13 13-35-28](https://github.com/chandraveer-simform/rhumbus/assets/65344767/670b88bf-63c3-42a5-9fe8-dd81bc6f0c5a)
+
+### Reports
+![Screenshot from 2023-10-13 13-35-55](https://github.com/chandraveer-simform/rhumbus/assets/65344767/7d6787e8-8713-42df-b984-95a72e6af8ef)
+
+### Balance Sheet
+Reports -> Balance sheet
+![Screenshot from 2023-10-13 13-36-39](https://github.com/chandraveer-simform/rhumbus/assets/65344767/41aa1457-01bd-4bee-bc2f-f6f5f11348c6)
+
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
