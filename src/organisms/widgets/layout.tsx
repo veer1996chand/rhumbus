@@ -8,7 +8,7 @@ export default function WidgetLayout({
   className,
 }: {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }) {
   return <Card className={`widget-layout ${className}`}>{children}</Card>;
 }

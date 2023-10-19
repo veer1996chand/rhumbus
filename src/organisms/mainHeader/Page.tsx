@@ -1,5 +1,5 @@
 "use client";
-import { Layout, Button, theme, Col, Row, Avatar, Badge } from "antd";
+import { Button, theme, Col, Row, Badge } from "antd";
 import {
   PlusOutlined,
   QuestionCircleFilled,

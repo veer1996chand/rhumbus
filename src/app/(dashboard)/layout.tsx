@@ -14,6 +14,10 @@ export default function DashboardLayout({
 }) {
   const [collapsed, setCollapsed] = useState(false);
 
+  const toggleCollapsed = () => {
+    setCollapsed(!collapsed);
+  };
+
   return (
     <Layout>
       <Sider
@@ -24,7 +28,7 @@ export default function DashboardLayout({
         className="left-sidebar border-right"
         // breakpoint="lg"
       >
-        <SideMenu />
+        <SideMenu toggleCollapsed={toggleCollapsed} collapsed={collapsed} />
       </Sider>
       <Layout>
         <MainHeader />

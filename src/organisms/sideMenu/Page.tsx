@@ -11,7 +11,6 @@ import {
 
 import Logo from "@/molecules/logo/page";
 import Menu, { getMenuItem } from "@/component/menu/page";
-
 import IconMenu from "../../assets/icon/ic_menu.svg";
 
 import "./sideBar.scss";
@@ -28,7 +27,7 @@ const items: MenuItem[] = [
     <AppstoreFilled className="large-icon" />
   ),
   getMenuItem("Business", "sub2", <HomeFilled className="large-icon" />, [
-    getMenuItem("Business Snapshot", "cashflow"),
+    // getMenuItem("Business Snapshot", "sales"),
     getMenuItem("Cast Flow", "cashflow"),
   ]),
   getMenuItem("Sales", "sub4", <PoundCircleFilled className="large-icon" />, [
@@ -43,7 +42,13 @@ const items: MenuItem[] = [
   getMenuItem("Contacts", "contacts", <GiftFilled className="large-icon" />),
 ];
 
-export default function SideMenu() {
+export default function SideMenu({
+  toggleCollapsed,
+  collapsed,
+}: {
+  toggleCollapsed?: () => void;
+  collapsed: boolean;
+}) {
   const router = useRouter();
   const [openKeys, setOpenKeys] = useState(["sub1"]);
 
@@ -62,9 +67,14 @@ export default function SideMenu() {
 
   return (
     <div>
-      <div className="sidebar-logo pt-23 row">
-        <Image src={IconMenu} alt="icon menu" className="mr-12 large-icon" />
-        <Logo />
+      <div className="sidebar-logo pt-23 ">
+        <Image
+          src={IconMenu}
+          alt="icon menu"
+          onClick={toggleCollapsed}
+          className="mr-12 large-icon cursor-pointer"
+        />
+        <Logo icon={collapsed} />
       </div>
       <div className="sidebar-menu pt-36">
         <Menu
