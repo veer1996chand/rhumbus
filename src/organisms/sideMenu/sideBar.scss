@@ -1,10 +1,18 @@
 @import "./../../style/variables";
 .sidebar-logo {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  margin-left: 24px;
 }
 
 .sidebar-menu {
+  .ant-menu-inline > .ant-menu-item {
+    width: 225px !important;
+  }
+
+  .ant-menu-inline-collapsed > .ant-menu-item {
+    // width: 130px !important;
+  }
   .ant-menu {
     border: none !important;
     width: 100%;
@@ -17,7 +25,6 @@
     line-height: normal;
 
     &-item {
-      width: 225px;
       height: 40px;
       border-radius: 12px;
       flex-shrink: 0;
