@@ -76,7 +76,7 @@ export default function SideMenu({
         />
         <Logo icon={collapsed} />
       </div>
-      <div className="sidebar-menu pt-36">
+      <div className="sidebar-menu pt-36 ">
         <Menu
           mode="inline"
           openKeys={openKeys}
@@ -84,6 +84,13 @@ export default function SideMenu({
           items={items}
           onClick={navigateToPage}
         />
+        <div className="sidebar-bottom-content">
+          <h4 className="medium">Rhombus UI Kit</h4>
+          <p className="paragraph2 mt-8">
+            Want to get more info about Rhombus?{" "}
+            <span className="primary-color underline">Contact us</span>
+          </p>
+        </div>
       </div>
     </div>
   );
