@@ -1,0 +1,17 @@
+@import "../../style/variables";
+.ant-table {
+  &-content {
+    padding: 12px;
+    background-color: $dark-6-white;
+  }
+
+  thead > tr {
+    z-index: 100;
+    border: 1px solid;
+  }
+  border-radius: 12px;
+  background: $dark-6-dark;
+
+  /* Shadow/1-Shadow */
+  box-shadow: $box-shadow-1;
+}

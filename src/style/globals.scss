@@ -67,3 +67,12 @@ body {
 }
 
 // Existing Antd Component Common Styles
+
+// Next JS Link Button
+a.njs-link {
+  @extend .paragraph1;
+  color: $dark-6-dark;
+}
+.njs-link:hover {
+  color: $primary-color;
+}

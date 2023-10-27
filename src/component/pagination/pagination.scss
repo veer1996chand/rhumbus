@@ -1,0 +1,44 @@
+@import "../../style/variables";
+@import "../../style/typography";
+.antd-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  .ant-pagination {
+    display: flex;
+    flex-direction: row;
+    &-prev {
+      display: none;
+    }
+    &-item a {
+      color: $dark-1-dark;
+    }
+
+    &-item-active {
+      border-color: $primary-color;
+    }
+    &-item-active:hover {
+      border-color: $primary-color;
+    }
+
+    &-item-active a {
+      color: $dark-1-dark;
+    }
+    &-item-active:hover a {
+      color: $dark-1-dark;
+    }
+
+    &-next {
+      @extend .paragraph1;
+      color: $dark-6-dark;
+      display: flex;
+      align-items: center;
+    }
+
+    &-next:hover a {
+      color: $primary-color;
+    }
+  }
+}
