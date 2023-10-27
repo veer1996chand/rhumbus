@@ -31,7 +31,7 @@ $box-shadow-1: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
   color: $primary-color;
 }
 .bg-primary-color {
-  background: $primary-color;
+  background: $primary-color !important ;
 }
 
 .dark-1-dark {

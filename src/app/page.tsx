@@ -7,7 +7,11 @@ export default function Home() {
     <>
       <Row>
         <Col>
-          <Image src={leftSideImage} alt="left side banner image" />
+          <Image
+            src={leftSideImage}
+            alt="left side banner image"
+            className="vh-100"
+          />
         </Col>
         <Col flex={1} className="justify-content-center col align-items-center">
           <div>

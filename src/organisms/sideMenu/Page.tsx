@@ -34,7 +34,7 @@ const items: MenuItem[] = [
     getMenuItem("Sales ", "sales"),
   ]),
   getMenuItem("Transactions", "sub5", <GiftFilled className="large-icon" />, [
-    getMenuItem("Transactions", "transaction"),
+    getMenuItem("Bills to pay", "billsToPay"),
   ]),
   getMenuItem("Expenses", "expenses", <GiftFilled className="large-icon" />),
   getMenuItem("Reports", "reports", <GiftFilled className="large-icon" />),
