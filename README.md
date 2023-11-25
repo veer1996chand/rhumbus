@@ -1,8 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rhumbus
 
+Welcome to the Rhumbus Web Portal, where cutting-edge technology meets the world of banking to create a seamless and efficient financial ecosystem. Our portal is designed to empower both customers and financial institutions, providing a user-friendly interface and a robust set of features that redefine the banking experience.
+
+## Technologies Used
+- [Next.js](https://nextjs.org/): A React framework for building web applications.
+- TypeScript: JavaScript With Syntax For Types.
+- HTML5, CSS 
+- Ant Design: An enterprise-class UI design language and React UI library with a set of high-quality React components, one of best React UI library for enterprises.
+
+## Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/): The JavaScript runtime used to run the build scripts.
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/): Package managers for installing project dependencies.
+  
 ## Getting Started
 
-First, run the development server:
+### Designed 
+We followed Figma design 
+Figma - https://www.figma.com/file/8q6Sb0Hqhg4EL4HM9gRxqo/Rhombus-UI-Kit-Desktop?type=design&t=kBtFVXJBY1MjoBzm-6
+
+### Installation
+
+1. Clone the repository: `[git clone https://github.com/your-username/your-repository.git](https://github.com/veer1996chand/rhumbus)`
+2. Navigate to the project directory: `cd rhumbus`
+3. Install dependencies: `npm install` or `yarn install`
+
+   
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -18,7 +46,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Pages
+Build
+To build the project for production:
+
+```bash
+npm run build
+# or
+yarn build
+
+```
+Project Structure
+We have the main folder Rhumbus and we developed this project using [`Atomic design`]([https://atomicdesign.bradfrost.com/chapter-2/#:~:text=Molecules%20are%20groups%20of%20two,functioning%20together%20as%20a%20unit.]) in the Next js with Typescript. our main important directory is SRC where we placed all the components and pages.
+
+## Developed Pages as Per Goals
 / - Home page
   /- Cash Flow
   /- Expenses
